@@ -4,10 +4,6 @@ Cetus, xCetus
 
 ## Concepts
 
-### Cetus && XCetus
-
-Cetus is token of the Cetus project.
-
 CETUS is the main token of the Cetus Protocol, while xCETUS is the Cetus escrowed token to unlock more utilities such as staking, governance, etc. CETUS can be converted into xCETUS instantly at any time, while xCETUS can be redeemed back to CETUS upon a vesting period. A different redemption ratio will be applied depending on the actual vesting duration selected.
 
 Details: https://cetus-1.gitbook.io/cetus-docs/tokenomics/cetus
