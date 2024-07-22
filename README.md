@@ -1,6 +1,6 @@
-# Token
+# Cetus Token Interface
 
-Cetus, xCetus
+Cetus, xCetus, Dividends
 
 ## Concepts
 
@@ -8,11 +8,15 @@ CETUS is the main token of the Cetus Protocol, while xCETUS is the Cetus escrowe
 
 Details: https://cetus-1.gitbook.io/cetus-docs/tokenomics/cetus
 
+Dividends is the protocol to manage bonus about xcetus. User can use reedeem_v2 to collect multi bonus.
+
 ### VeNFT
 
 VeNFT is used for holding the xCetus.
 
 ## Tags corresponding to different networks
+
+1. XCetus
 
 | Tag of Repo | Network | Latest published at address                                        |
 | ----------- | ------- | ------------------------------------------------------------------ |
@@ -24,11 +28,32 @@ eg:
 mainnet:
 
 ```
-CetusClmm = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "xcetus", rev = "mainnet" }
+XCetus = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "xcetus", rev = "mainnet" }
 ```
 
 testnet:
 
 ```
-CetusClmm = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "xcetus", rev = "testnet" }
+XCetus = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "xcetus", rev = "testnet" }
+```
+
+2. Dividend
+
+| Tag of Repo | Network | Latest published at address                                        |
+| ----------- | ------- | ------------------------------------------------------------------ |
+| mainnet     | mainnet | 0xcec352932edc6663a118e8d64ed54da6b8107e8719603bf728f80717592cd9e8 |
+| testnet     | testnet | 0x20d948d640edd0c749f533d41efc5f843f212d441220324ad7959c6e1d281828 |
+
+eg:
+
+mainnet:
+
+```
+Dividend = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "dividend", rev = "mainnet" }
+```
+
+testnet:
+
+```
+Dividend = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "dividend", rev = "testnet" }
 ```
