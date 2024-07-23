@@ -31,7 +31,7 @@ module dividends::router {
     /// args
     ///     - cap
     ///     - manager: `DividendManager`
-    public entry fun remove_bonus<CoinA>(cap: &AdminCap, manager: &mut DividendManager) {
+    public entry fun remove_bonus<CoinA>(_cap: &AdminCap, _manager: &mut DividendManager) {
         abort 0
     }
 
@@ -39,7 +39,7 @@ module dividends::router {
     /// args
     ///     - cap
     ///     - mangager
-    public entry fun push_bonus<CoinA>(cap: &AdminCap, manager: &mut DividendManager) {
+    public entry fun push_bonus<CoinA>(_cap: &AdminCap, _manager: &mut DividendManager) {
         abort 0
     }
 
@@ -48,10 +48,10 @@ module dividends::router {
     ///     - `DividendManager`
     ///     - Coin
     public entry fun deposit<CoinA>(
-        m: &mut DividendManager,
-        coins: vector<Coin<CoinA>>,
-        amount: u64,
-        ctx: &mut TxContext
+        _m: &mut DividendManager,
+        _coins: vector<Coin<CoinA>>,
+        _amount: u64,
+        _ctx: &mut TxContext
     ) {
         abort 0
     }
@@ -61,22 +61,22 @@ module dividends::router {
     ///     -`DividendManager`
     ///     - Venft
     public entry fun redeem_v2<CoinA>(
-        m: &mut DividendManager,
-        venft: &mut VeNFT,
-        clk: &Clock,
-        ctx: &mut TxContext
+        _m: &mut DividendManager,
+        _venft: &mut VeNFT,
+        _clk: &Clock,
+        _ctx: &mut TxContext
     ) {
         abort 0
     }
 
 
     public entry fun redeem_xtoken(
-        manager: &mut LockUpManager,
-        xcetus_m: &mut XcetusManager,
-        m: &mut DividendManager,
-        venft: &mut VeNFT,
-        clk: &Clock,
-        ctx: &mut TxContext
+        _manager: &mut LockUpManager,
+        _xcetus_m: &mut XcetusManager,
+        _m: &mut DividendManager,
+        _venft: &mut VeNFT,
+        _clk: &Clock,
+        _ctx: &mut TxContext
     ) {
         abort 0
     }
@@ -90,17 +90,17 @@ module dividends::router {
     ///     - start
     ///     - limit
     public entry fun settle(
-        cap: &SettleCap,
-        m: &mut DividendManager,
-        xcetus_manager: & XcetusManager,
-        phase: u64,
-        start: vector<ID>,
-        limit: u64
+        _cap: &SettleCap,
+        _m: &mut DividendManager,
+        _xcetus_manager: & XcetusManager,
+        _phase: u64,
+        _start: vector<ID>,
+        _limit: u64
     ) {
         abort 0
     }
 
-    public entry fun fetch_dividend_info(m: &DividendManager, venft_id: ID) {
+    public entry fun fetch_dividend_info(_m: &DividendManager, _venft_id: ID) {
         abort 0
     }
 }
