@@ -4,13 +4,9 @@ Cetus, xCetus, Dividends
 
 ## Concepts
 
-### Cetus && XCetus
-
 CETUS is the main token of the Cetus Protocol, while xCETUS is the Cetus escrowed token to unlock more utilities such as staking, governance, etc. CETUS can be converted into xCETUS instantly at any time, while xCETUS can be redeemed back to CETUS upon a vesting period. A different redemption ratio will be applied depending on the actual vesting duration selected.
 
 Details: https://cetus-1.gitbook.io/cetus-docs/tokenomics/cetus
-
-### Dividends
 
 Dividends is the protocol to manage bonus about xcetus. User can use reedeem_v2 to collect multi bonus.
 
@@ -32,13 +28,13 @@ eg:
 mainnet:
 
 ```
-XCetus = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "xcetus", rev = "mainnet" }
+xcetus = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "xcetus", rev = "mainnet" }
 ```
 
 testnet:
 
 ```
-XCetus = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "xcetus", rev = "testnet" }
+xcetus = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "xcetus", rev = "testnet" }
 ```
 
 2. Dividend
@@ -53,11 +49,11 @@ eg:
 mainnet:
 
 ```
-Dividend = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "dividend", rev = "mainnet" }
+dividend = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "dividend", rev = "mainnet" }
 ```
 
 testnet:
 
 ```
-Dividend = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "dividend", rev = "testnet" }
+dividend = { git = "https://github.com/CetusProtocol/cetus-token-interface.git", subdir = "dividend", rev = "testnet" }
 ```
