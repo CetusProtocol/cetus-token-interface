@@ -165,39 +165,39 @@ module dividends::dividend {
 
 
     /// Init the AdminCap.
-    fun init(ctx: &mut TxContext) {
+    fun init(_ctx: &mut TxContext) {
         abort 0
     }
 
-    public fun checked_package_version(m: &DividendManager) {
+    public fun checked_package_version(_m: &DividendManager) {
         abort 0
     }
 
-    public entry fun update_package_version<CoinA>(_: &AdminCap, manager: &mut DividendManager, version: u64) {
+    public entry fun update_package_version<CoinA>(_: &AdminCap, _manager: &mut DividendManager, _version: u64) {
         abort 0
     }
 
-    public entry fun update_start_time(_: &AdminCap, manager: &mut DividendManager, start_time: u64, clk: &Clock) {
+    public entry fun update_start_time(_: &AdminCap, _manager: &mut DividendManager, _start_time: u64, _clk: &Clock) {
         abort 0
     }
 
     /// Add bonus type.
-    public fun push_bonus<CoinA>(_: &AdminCap, manager: &mut DividendManager) {
+    public fun push_bonus<CoinA>(_: &AdminCap, _manager: &mut DividendManager) {
         abort 0
     }
 
     /// Remove bonus type.
-    public fun remove_bonus<CoinA>(_: &AdminCap, manager: &mut DividendManager) {
+    public fun remove_bonus<CoinA>(_: &AdminCap, _manager: &mut DividendManager) {
         abort 0
     }
 
     /// Register bonus type at phase
-    public fun register_bonus<CoinA>(_: &AdminCap, m: &mut DividendManager, phase: u64, amount: u64, clk: &Clock) {
+    public fun register_bonus<CoinA>(_: &AdminCap, _m: &mut DividendManager, _phase: u64, _amount: u64, _clk: &Clock) {
         abort 0
     }
 
     /// Update bonus amount at special phase.
-    public entry fun update_bonus<CoinA>(_: &AdminCap, m: &mut DividendManager, phase: u64, amount: u64) {
+    public entry fun update_bonus<CoinA>(_: &AdminCap, _m: &mut DividendManager, _phase: u64, _amount: u64) {
         abort 0
     }
 
@@ -205,80 +205,80 @@ module dividends::dividend {
     /// Every phase ends, the settle is needed do distribute the bonus to Venfts.
     public fun settle(
         _: &SettleCap,
-        m: &mut DividendManager,
-        xcetus_manager: & XcetusManager,
-        phase: u64,
-        start: vector<ID>,
-        limit: u64
+        _m: &mut DividendManager,
+        _xcetus_manager: & XcetusManager,
+        _phase: u64,
+        _start: vector<ID>,
+        _limit: u64
     ): option::Option<ID> {
         abort 0
     }
 
     public fun redeem_v2<CoinA>(
-        m: &mut DividendManager,
-        venft: &mut VeNFT,
-        clk: &Clock,
-        ctx: &mut TxContext
+        _m: &mut DividendManager,
+        _venft: &mut VeNFT,
+        _clk: &Clock,
+        _ctx: &mut TxContext
     ) {
         abort 0
     }
 
     public fun redeem_xtoken(
-        manager: &mut LockUpManager,
-        xcetus_m: &mut XcetusManager,
-        m: &mut DividendManager,
-        venft: &mut VeNFT,
-        clk: &Clock,
-        ctx: &mut TxContext
+        _manager: &mut LockUpManager,
+        _xcetus_m: &mut XcetusManager,
+        _m: &mut DividendManager,
+        _venft: &mut VeNFT,
+        _clk: &Clock,
+        _ctx: &mut TxContext
     ) {
         abort 0
     }
 
     /// Transfer CoinA to `DividendManager`.
-    public fun deposit<CoinA>(m: &mut DividendManager, coin: &mut Coin<CoinA>, amount: u64, ctx: &mut TxContext) {
+    public fun deposit<CoinA>(_m: &mut DividendManager, _coin: &mut Coin<CoinA>, _amount: u64, _ctx: &mut TxContext) {
         abort 0
     }
 
     /// Redeem CoinA from DividendManager by the admin.
     public entry fun redeem_extra<CoinA>(
         _: &AdminCap,
-        m: &mut DividendManager,
-        receiver: address,
-        amount: u64,
-        ctx: &mut TxContext
+        _m: &mut DividendManager,
+        _receiver: address,
+        _amount: u64,
+        _ctx: &mut TxContext
     ) {
         abort 0
     }
 
     /// Stop the dividend
-    public entry fun close(_: &AdminCap, m: &mut DividendManager) {
+    public entry fun close(_: &AdminCap, _m: &mut DividendManager) {
         abort 0
     }
 
-    public fun fetch_dividend_info(m: &DividendManager, venft_id: ID) {
+    public fun fetch_dividend_info(_m: &DividendManager, _venft_id: ID) {
         abort 0
     }
 
     fun redeem_token<CoinA>(
-        m: &mut DividendManager,
-        venft: &mut VeNFT,
-        clk: &Clock,
+        _m: &mut DividendManager,
+        _venft: &mut VeNFT,
+        _clk: &Clock,
     ): u64 {
         abort 0
     }
 
     /// Add bonus to venft.
-    fun add_dividend(manager: &mut DividendManager, venft_id: ID, phase: u64, key: TypeName, amount: u64): bool {
+    fun add_dividend(_manager: &mut DividendManager, _venft_id: ID, _phase: u64, _key: TypeName, _amount: u64): bool {
         abort 0
     }
 
     /// Update the redeemed_num in global DividendInfo.
-    fun increase_redeem(m: &mut DividendManager, redeem_nums: vec_map::VecMap<u64, u64>, key: TypeName) {
+    fun increase_redeem(_m: &mut DividendManager, _redeem_nums: vec_map::VecMap<u64, u64>, _key: TypeName) {
         abort 0
     }
 
     /// Take CoinA from `Dividend`.
-    fun take<CoinA>(m: &mut DividendManager, amount: u64): Balance<CoinA> {
+    fun take<CoinA>(_m: &mut DividendManager, _amount: u64): Balance<CoinA> {
         abort 0
     }
 
